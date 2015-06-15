@@ -23,14 +23,14 @@
           </thead>
           <tbody>
             <tr ng-repeat="user in leaderboard.users">
-              <td>??? <!--{{$index + 1}}--></td>
-              <td>??? <!--{{user.email}}--></td>
-              <td>??? <!--{{user.points}}--></td>
+              <td>{{$index + 1}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.points}}</td>
             </tr>
             <tr ng-show="consolation" class="consolation">
               <td><b>:(</b></td>
-              <td>???<!--{{consolation.email}}--></td>
-              <td>???<!--{{consolation.points}}--></td>
+              <td>{{consolation.email}}</td>
+              <td>{{consolation.points}}</td>
             </tr>
           </tbody>
         </table>
@@ -45,6 +45,7 @@
         <li>Een <span class="easy">makkelijke</span> opgave te laten aftekenen bij de docent (+10)</li>
         <li>Een <span class="medium">medium</span> opgave te laten aftekenen bij de docent (+15)</li>
         <li>Een <span class="hard">moeilijke</span> opgave te laten aftekenen bij de docent (+20)</li>
+        <li>Koekjes op te eten! (+1)</li>
       </ul>
       </div>
     </div> <!-- End of Leaderboard controller -->

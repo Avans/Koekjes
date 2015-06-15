@@ -83,6 +83,17 @@ var assignments = {
             assert.isEqual(sites[1], "http://reddit.com/", "De tweede waarde moet \"http://reddit.com/\" zijn");
         }
     },
+    koekjes: {
+        id: "557ecda0e4b0edb3491d2d3a",
+        title: "Le Choco Cookie",
+        description: "Definieer een variabele 'koekje' met de waarde 'chocolade koekje'.",
+        points: 10,
+        return: "typeof koekje === 'undefined' ? undefined : koekje",
+        tester: function(koekje) {
+            assert.isDefined(koekje, "Je hebt geen variabele 'koekje' gedefinieerd");
+            assert.isEqual(koekje, 'chocolade koekje', "De waarde van 'koekje' moet 'chocolade koekje' zijn.");
+        }
+    },
     unixtime: {
         id: "553915c844761a2400e62edc",
         title: "Got the time?",

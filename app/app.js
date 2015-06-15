@@ -233,7 +233,7 @@ app.controller("LeaderboardController", ["$scope", "$http", "UserFactory", funct
 		UserFactory.login();
 	};
 
-	$http.get(BASE_URL + '/Leaderboards?token=' + window.localStorage['token'])
+	$http.get(BASE_URL + '/Leaderboards/teachers?token=' + window.localStorage['token'])
 		.success(function(data, status){
 			$scope.leaderboard = data;
             $scope.consolation = data.consolation;
