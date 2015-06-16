@@ -84,7 +84,7 @@ var assignments = {
         }
     },
     koekjes: {
-        id: "557ecda0e4b0edb3491d2d3a",
+        id: "5540bbac7fd7b32400e7bb79",
         title: "Le Choco Cookie",
         description: "Definieer een variabele 'koekje' met de waarde 'chocolade koekje'.",
         points: 10,
